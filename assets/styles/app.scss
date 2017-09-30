@@ -25,6 +25,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      background: rgba(49, 50, 51, 0.27);
     }
   }
   .section, .hero {
@@ -38,7 +39,6 @@ body {
     }
     .image-overlay {
       position: absolute;
-      background: rgba(49, 50, 51, 0.27);
       h1, h2 {
         font-weight: 600;
         text-transform: uppercase;
