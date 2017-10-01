@@ -6,18 +6,88 @@ body {
   font-family: "Raleway", sans-serif;
   color: $white;
 }
-.row {
-  display: flex;
-  .section {
-    height: 200px;
-    .image-overlay {
-      bottom: 2rem;
-      left: 1rem;
+.front-page {
+  height: 100vh;
+}
+.nav {
+  background: #333;
+}
+.back {
+  i {
+    color: $white;
+    font-size: 32px;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+#map {
+  height: calc(100vh - 48px);
+  color: #333;
+  #firstHeading {
+    margin: 0.5rem 0;
+  }
+  .info-image {
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  p, i {
+    margin: 0.3rem 0;
+  }
+}
+.event-list {
+  background: #8e0e00; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #d82320, #A92F2D); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(0deg, #d82320, #A92F2D);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  .advent-badge {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    img {
+      height: 80px;
+      box-shadow: 0 0 6px 0 rgba(8, 19, 132, 0.86);
+      border-radius: 50%;
     }
   }
-  .hero {
-    height: 350px;
+  .event-list-items {
+    text-align: center;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid;
+      margin: 0.25rem;
+      height: 50px;
+      background: hsla(0, 82%, 23%, 0.63);
+      box-shadow: 0 0 6px 0 hsla(0, 89%, 29%, 0.86);
+      color: #ECE3E1;
+      border-radius: 200px;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.row {
+  display: flex;
+  .section, .hero {
+    min-height: 200px;
+    padding: 0;
+    flex: 1;
+    position: relative;
+    a {
+      color: $white;
+    }
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
     .image-overlay {
+      position: absolute;
       top: 0;
       bottom: 0;
       left: 0;
@@ -26,19 +96,6 @@ body {
       align-items: center;
       justify-content: center;
       background: rgba(49, 50, 51, 0.27);
-    }
-  }
-  .section, .hero {
-    padding: 0;
-    flex: 1;
-    position: relative;
-    img {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-    }
-    .image-overlay {
-      position: absolute;
       h1, h2 {
         font-weight: 600;
         text-transform: uppercase;
