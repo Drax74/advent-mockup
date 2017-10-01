@@ -3,13 +3,13 @@ function initMap() {
               '<h2 id="firstHeading" class="firstHeading">Fritule</h2>'+
               '<img src="./public/img/fritule.jpg" class="info-image">' +
               '<div id="bodyContent">'+
-              '<i>Najukusnije fritule u gradu</i>' +
+              '<i class="description">Najukusnije fritule u gradu</i>' +
               '<p><b>Radno vrijeme</b></p>' +
               '<p>Pon-Pet: 11-23</p>' +
               '<p>Pet-Sub: 11-01</p>' +
               '<p>Ned: zatvoreno</p>' +
               '<p><a href="">'+
-              '<i class="ion-social-facebook"></i>acebook</a> '+
+              '<i class="fa fa-facebook" aria-hidden="true"></i>acebook</a> '+
               '</p>'+
               '</div>'+
               '</div>'
