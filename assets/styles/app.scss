@@ -1,10 +1,11 @@
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 $white: #fff;
+$black: #333;
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
-  color: $white;
+  color: $black;
 }
 .front-page {
   height: 100vh;
@@ -16,7 +17,7 @@ body {
   i {
     color: $white;
     font-size: 32px;
-    margin: 0.5rem;
+    margin: 0.5rem 0;
   }
 }
 #map {
@@ -35,41 +36,23 @@ body {
   }
 }
 .event-list {
-  background: #8e0e00; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #d82320, #A92F2D); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(0deg, #d82320, #A92F2D);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  .advent-badge {
-    margin: 1rem;
-    display: flex;
-    justify-content: center;
-    img {
-      height: 80px;
-      box-shadow: 0 0 6px 0 rgba(8, 19, 132, 0.86);
-      border-radius: 50%;
-    }
-  }
-  .event-list-items {
-    text-align: center;
-    a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid;
-      margin: 0.25rem;
-      height: 50px;
-      background: hsla(0, 82%, 23%, 0.63);
-      box-shadow: 0 0 6px 0 hsla(0, 89%, 29%, 0.86);
-      color: #ECE3E1;
-      border-radius: 200px;
-      border: none;
-      outline: none;
-      font-size: 1rem;
-      font-weight: 600;
+  .section {
+    flex: auto!important;
+    h3 {
+      max-width: 150px;
     }
   }
 }
-
+.info {
+  .cover {
+    max-height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.info-text {
+  margin-top: 2rem;
+}
 .row {
   display: flex;
   .section, .hero {
@@ -94,10 +77,12 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      text-align: center;
       background: rgba(49, 50, 51, 0.27);
-      h1, h2 {
+      h1, h2, h3 {
         font-weight: 600;
         text-transform: uppercase;
+        color: $white;
       }
     }
   }

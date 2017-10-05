@@ -74,7 +74,7 @@ function initMap() {
         map: map,
         position: element.position,
         title: element.title,
-        icon: './public/img/stall.png'
+        icon: './public/img/stall-icon-small.png'
       });
 
       marker.addListener('click', function() {
